@@ -27,7 +27,7 @@ make
 Modify the error function in *quadtree.cpp* to prescribe the erroneous finite element region:
 
 ```
-error = offset+(f(x,y))
+error = offset+f(x,y)
 ```
 
 Here, *(x,y)* denotes the coordinates of the centre of the quadtree and *offset* denotes an arbitrary constant which is used to avoid a zero error during subdivision.
@@ -45,6 +45,8 @@ Width:
 ```
 
 Alternatively, you can prescribe a point cloud with *(x,y)* coordinates to generate your preliminary quadtree.
+
+All results will be in *.tec* form which can be visualized using Paraview.
 
 ## Examples
 
